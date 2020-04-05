@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane id="MainPane" fx:id="MainPane" dividerPositions="0.20234113712374582" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+  <items>
+    <AnchorPane id="ButtonPane" fx:id="ButtonPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Button id="GenerateButton" layoutX="9.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#generateGraph" prefHeight="51.0" prefWidth="99.0" text="rysuj test!" />
+         </children></AnchorPane>
+    <AnchorPane id="CanvasPane" fx:id="CanvasPane" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="500.0">
+         <children>
+            <Canvas id="GraphCanvas" fx:id="GraphCanvas" height="400.0" layoutY="-1.0" width="473.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
